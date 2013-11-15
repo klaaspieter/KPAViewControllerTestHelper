@@ -11,5 +11,6 @@
 @interface KPAViewControllerTestHelper : NSObject
 
 + (void)presentViewController:(UIViewController *)viewController;
++ (void)pushViewController:(UIViewController *)viewController;
 
 @end

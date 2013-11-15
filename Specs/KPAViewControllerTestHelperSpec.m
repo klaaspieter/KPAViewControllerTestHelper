@@ -25,6 +25,26 @@ describe(@"KPAViewControllerTestHelper", ^{
             expect(keyWindow.rootViewController).to.equal(_viewController);
         });
     });
+
+    describe(@"pushing a view controller", ^{
+        it(@"makes a new key window", ^{
+            UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            expect(keyWindow).toNot.equal([UIApplication sharedApplication].keyWindow);
+        });
+
+        it(@"sets a UINavigationController as the rootViewController", ^{
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+            expect(keyWindow.rootViewController).to.beKindOf([UINavigationController class]);
+        });
+
+        it(@"sets the viewController as the navigation controller's root", ^{
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            UINavigationController *navigationController = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+            expect(navigationController.topViewController).to.equal(_viewController);
+        });
+    });
 });
 
 SpecEnd

@@ -17,4 +17,11 @@
     window.rootViewController = viewController;
 }
 
++ (void)pushViewController:(UIViewController *)viewController;
+{
+    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
+    [window makeKeyAndVisible];
+    window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+}
+
 @end
