@@ -6,7 +6,7 @@ A convenience class for testing iOS view controllers
 
 Add the following to your [Podfile](http://docs.cocoapods.org/podfile.html):
 
-    pod "KPAStoryboardConvenience"
+    pod "KPAViewControllerTestHelper", git: "https://github.com/klaaspieter/KPAViewControllerTestHelper.git"
 
 # Usage
 
