@@ -10,4 +10,11 @@
 
 @implementation KPAViewControllerTestHelper
 
++ (void)presentViewController:(UIViewController *)viewController;
+{
+    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
+    [window makeKeyAndVisible];
+    window.rootViewController = viewController;
+}
+
 @end

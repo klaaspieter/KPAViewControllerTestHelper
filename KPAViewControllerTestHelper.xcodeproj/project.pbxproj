@@ -15,6 +15,15 @@
 		A18B977D1835C109006E2FCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B975B1835C0D2006E2FCD /* UIKit.framework */; };
 		A18B97831835C109006E2FCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18B97811835C109006E2FCD /* InfoPlist.strings */; };
 		A18B978D1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B978C1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m */; };
+		A18B97951835C3F9006E2FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B974A1835C0D2006E2FCD /* Foundation.framework */; };
+		A18B97971835C3F9006E2FCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B97961835C3F9006E2FCD /* CoreGraphics.framework */; };
+		A18B97981835C3F9006E2FCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B975B1835C0D2006E2FCD /* UIKit.framework */; };
+		A18B979E1835C3F9006E2FCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18B979C1835C3F9006E2FCD /* InfoPlist.strings */; };
+		A18B97A01835C3F9006E2FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B979F1835C3F9006E2FCD /* main.m */; };
+		A18B97A41835C3F9006E2FCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B97A31835C3F9006E2FCD /* AppDelegate.m */; };
+		A18B97A61835C3F9006E2FCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18B97A51835C3F9006E2FCD /* Images.xcassets */; };
+		A18B97BF1835C426006E2FCD /* KPAViewControllerTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */; };
+		A18B97C01835C43E006E2FCD /* KPAViewControllerTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,15 @@
 		A18B97861835C109006E2FCD /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		A18B978C1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAViewControllerTestHelperSpec.m; sourceTree = "<group>"; };
 		A18B978E1835C200006E2FCD /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		A18B97941835C3F9006E2FCD /* SpecsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18B97961835C3F9006E2FCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A18B979B1835C3F9006E2FCD /* SpecsApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecsApp-Info.plist"; sourceTree = "<group>"; };
+		A18B979D1835C3F9006E2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A18B979F1835C3F9006E2FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A18B97A11835C3F9006E2FCD /* SpecsApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecsApp-Prefix.pch"; sourceTree = "<group>"; };
+		A18B97A21835C3F9006E2FCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A18B97A31835C3F9006E2FCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A18B97A51835C3F9006E2FCD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +95,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A18B97911835C3F9006E2FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B97971835C3F9006E2FCD /* CoreGraphics.framework in Frameworks */,
+				A18B97981835C3F9006E2FCD /* UIKit.framework in Frameworks */,
+				A18B97951835C3F9006E2FCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +113,7 @@
 			children = (
 				A18B97701835C0F8006E2FCD /* Classes */,
 				A18B977E1835C109006E2FCD /* Specs */,
+				A18B97991835C3F9006E2FCD /* SpecsApp */,
 				A18B97491835C0D2006E2FCD /* Frameworks */,
 				A18B97481835C0D2006E2FCD /* Products */,
 				B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */,
@@ -96,6 +125,7 @@
 			children = (
 				A18B97471835C0D2006E2FCD /* libKPAViewControllerTestHelper.a */,
 				A18B977A1835C109006E2FCD /* Specs.xctest */,
+				A18B97941835C3F9006E2FCD /* SpecsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +137,7 @@
 				A18B97581835C0D2006E2FCD /* XCTest.framework */,
 				A18B975B1835C0D2006E2FCD /* UIKit.framework */,
 				1D212FE4B041455D82CC5B0B /* libPods-Specs.a */,
+				A18B97961835C3F9006E2FCD /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,6 +176,28 @@
 				A18B97811835C109006E2FCD /* InfoPlist.strings */,
 				A18B97861835C109006E2FCD /* Specs-Prefix.pch */,
 				A18B978E1835C200006E2FCD /* SpecHelper.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A18B97991835C3F9006E2FCD /* SpecsApp */ = {
+			isa = PBXGroup;
+			children = (
+				A18B97A21835C3F9006E2FCD /* AppDelegate.h */,
+				A18B97A31835C3F9006E2FCD /* AppDelegate.m */,
+				A18B97A51835C3F9006E2FCD /* Images.xcassets */,
+				A18B979A1835C3F9006E2FCD /* Supporting Files */,
+			);
+			path = SpecsApp;
+			sourceTree = "<group>";
+		};
+		A18B979A1835C3F9006E2FCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18B979B1835C3F9006E2FCD /* SpecsApp-Info.plist */,
+				A18B979C1835C3F9006E2FCD /* InfoPlist.strings */,
+				A18B979F1835C3F9006E2FCD /* main.m */,
+				A18B97A11835C3F9006E2FCD /* SpecsApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,6 +242,23 @@
 			productReference = A18B977A1835C109006E2FCD /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A18B97931835C3F9006E2FCD /* SpecsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18B97B91835C3F9006E2FCD /* Build configuration list for PBXNativeTarget "SpecsApp" */;
+			buildPhases = (
+				A18B97901835C3F9006E2FCD /* Sources */,
+				A18B97911835C3F9006E2FCD /* Frameworks */,
+				A18B97921835C3F9006E2FCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpecsApp;
+			productName = SpecsApp;
+			productReference = A18B97941835C3F9006E2FCD /* SpecsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,7 +269,7 @@
 				ORGANIZATIONNAME = Annema;
 				TargetAttributes = {
 					A18B97791835C109006E2FCD = {
-						TestTargetID = A18B97461835C0D2006E2FCD;
+						TestTargetID = A18B97931835C3F9006E2FCD;
 					};
 				};
 			};
@@ -217,6 +287,7 @@
 			targets = (
 				A18B97461835C0D2006E2FCD /* KPAViewControllerTestHelper */,
 				A18B97791835C109006E2FCD /* Specs */,
+				A18B97931835C3F9006E2FCD /* SpecsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18B97831835C109006E2FCD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18B97921835C3F9006E2FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B979E1835C3F9006E2FCD /* InfoPlist.strings in Resources */,
+				A18B97A61835C3F9006E2FCD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +359,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18B978D1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m in Sources */,
+				A18B97C01835C43E006E2FCD /* KPAViewControllerTestHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18B97901835C3F9006E2FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B97A41835C3F9006E2FCD /* AppDelegate.m in Sources */,
+				A18B97BF1835C426006E2FCD /* KPAViewControllerTestHelper.m in Sources */,
+				A18B97A01835C3F9006E2FCD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +388,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				A18B97821835C109006E2FCD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A18B979C1835C3F9006E2FCD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A18B979D1835C3F9006E2FCD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -403,6 +502,7 @@
 			baseConfigurationReference = B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpecsApp.app/SpecsApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -416,6 +516,7 @@
 				);
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -425,6 +526,7 @@
 			baseConfigurationReference = B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpecsApp.app/SpecsApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -434,7 +536,50 @@
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		A18B97BA1835C3F9006E2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecsApp/SpecsApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpecsApp/SpecsApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A18B97BB1835C3F9006E2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecsApp/SpecsApp-Prefix.pch";
+				INFOPLIST_FILE = "SpecsApp/SpecsApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -467,6 +612,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A18B97B91835C3F9006E2FCD /* Build configuration list for PBXNativeTarget "SpecsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18B97BA1835C3F9006E2FCD /* Debug */,
+				A18B97BB1835C3F9006E2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
