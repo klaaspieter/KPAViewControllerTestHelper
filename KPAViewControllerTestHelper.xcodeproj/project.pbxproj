@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33DFF02D5A6442EFB08E24B5 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D212FE4B041455D82CC5B0B /* libPods-Specs.a */; };
+		A18B974B1835C0D2006E2FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B974A1835C0D2006E2FCD /* Foundation.framework */; };
+		A18B97741835C0F8006E2FCD /* KPAViewControllerTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */; };
+		A18B977B1835C109006E2FCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B97581835C0D2006E2FCD /* XCTest.framework */; };
+		A18B977C1835C109006E2FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B974A1835C0D2006E2FCD /* Foundation.framework */; };
+		A18B977D1835C109006E2FCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B975B1835C0D2006E2FCD /* UIKit.framework */; };
+		A18B97831835C109006E2FCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18B97811835C109006E2FCD /* InfoPlist.strings */; };
+		A18B978D1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B978C1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A18B97871835C109006E2FCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A18B973F1835C0D2006E2FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A18B97461835C0D2006E2FCD;
+			remoteInfo = KPAViewControllerTestHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A18B97451835C0D2006E2FCD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D212FE4B041455D82CC5B0B /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18B97471835C0D2006E2FCD /* libKPAViewControllerTestHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKPAViewControllerTestHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18B974A1835C0D2006E2FCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A18B97581835C0D2006E2FCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A18B975B1835C0D2006E2FCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A18B97711835C0F8006E2FCD /* KPAViewControllerTestHelper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPAViewControllerTestHelper-Prefix.pch"; sourceTree = "<group>"; };
+		A18B97721835C0F8006E2FCD /* KPAViewControllerTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAViewControllerTestHelper.h; sourceTree = "<group>"; };
+		A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAViewControllerTestHelper.m; sourceTree = "<group>"; };
+		A18B977A1835C109006E2FCD /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18B97801835C109006E2FCD /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		A18B97821835C109006E2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A18B97861835C109006E2FCD /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		A18B978C1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAViewControllerTestHelperSpec.m; sourceTree = "<group>"; };
+		A18B978E1835C200006E2FCD /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A18B97441835C0D2006E2FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B974B1835C0D2006E2FCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18B97771835C109006E2FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B977B1835C109006E2FCD /* XCTest.framework in Frameworks */,
+				A18B977D1835C109006E2FCD /* UIKit.framework in Frameworks */,
+				A18B977C1835C109006E2FCD /* Foundation.framework in Frameworks */,
+				33DFF02D5A6442EFB08E24B5 /* libPods-Specs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A18B973E1835C0D2006E2FCD = {
+			isa = PBXGroup;
+			children = (
+				A18B97701835C0F8006E2FCD /* Classes */,
+				A18B977E1835C109006E2FCD /* Specs */,
+				A18B97491835C0D2006E2FCD /* Frameworks */,
+				A18B97481835C0D2006E2FCD /* Products */,
+				B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A18B97481835C0D2006E2FCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A18B97471835C0D2006E2FCD /* libKPAViewControllerTestHelper.a */,
+				A18B977A1835C109006E2FCD /* Specs.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A18B97491835C0D2006E2FCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18B974A1835C0D2006E2FCD /* Foundation.framework */,
+				A18B97581835C0D2006E2FCD /* XCTest.framework */,
+				A18B975B1835C0D2006E2FCD /* UIKit.framework */,
+				1D212FE4B041455D82CC5B0B /* libPods-Specs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A18B97701835C0F8006E2FCD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A18B97751835C0FD006E2FCD /* Supporting Files */,
+				A18B97721835C0F8006E2FCD /* KPAViewControllerTestHelper.h */,
+				A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A18B97751835C0FD006E2FCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18B97711835C0F8006E2FCD /* KPAViewControllerTestHelper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A18B977E1835C109006E2FCD /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				A18B977F1835C109006E2FCD /* Supporting Files */,
+				A18B978C1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		A18B977F1835C109006E2FCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18B97801835C109006E2FCD /* Specs-Info.plist */,
+				A18B97811835C109006E2FCD /* InfoPlist.strings */,
+				A18B97861835C109006E2FCD /* Specs-Prefix.pch */,
+				A18B978E1835C200006E2FCD /* SpecHelper.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A18B97461835C0D2006E2FCD /* KPAViewControllerTestHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18B976A1835C0D2006E2FCD /* Build configuration list for PBXNativeTarget "KPAViewControllerTestHelper" */;
+			buildPhases = (
+				A18B97431835C0D2006E2FCD /* Sources */,
+				A18B97441835C0D2006E2FCD /* Frameworks */,
+				A18B97451835C0D2006E2FCD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPAViewControllerTestHelper;
+			productName = KPAViewControllerTestHelper;
+			productReference = A18B97471835C0D2006E2FCD /* libKPAViewControllerTestHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A18B97791835C109006E2FCD /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18B97891835C109006E2FCD /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				8070E505CA7440DE98B9D9F1 /* Check Pods Manifest.lock */,
+				A18B97761835C109006E2FCD /* Sources */,
+				A18B97771835C109006E2FCD /* Frameworks */,
+				A18B97781835C109006E2FCD /* Resources */,
+				C6488835E53D44BDAC45BD74 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A18B97881835C109006E2FCD /* PBXTargetDependency */,
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = A18B977A1835C109006E2FCD /* Specs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A18B973F1835C0D2006E2FCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Annema;
+				TargetAttributes = {
+					A18B97791835C109006E2FCD = {
+						TestTargetID = A18B97461835C0D2006E2FCD;
+					};
+				};
+			};
+			buildConfigurationList = A18B97421835C0D2006E2FCD /* Build configuration list for PBXProject "KPAViewControllerTestHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A18B973E1835C0D2006E2FCD;
+			productRefGroup = A18B97481835C0D2006E2FCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A18B97461835C0D2006E2FCD /* KPAViewControllerTestHelper */,
+				A18B97791835C109006E2FCD /* Specs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A18B97781835C109006E2FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B97831835C109006E2FCD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8070E505CA7440DE98B9D9F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6488835E53D44BDAC45BD74 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A18B97431835C0D2006E2FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B97741835C0F8006E2FCD /* KPAViewControllerTestHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18B97761835C109006E2FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18B978D1835C1E5006E2FCD /* KPAViewControllerTestHelperSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A18B97881835C109006E2FCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A18B97461835C0D2006E2FCD /* KPAViewControllerTestHelper */;
+			targetProxy = A18B97871835C109006E2FCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A18B97811835C109006E2FCD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A18B97821835C109006E2FCD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A18B97681835C0D2006E2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A18B97691835C0D2006E2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A18B976B1835C0D2006E2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KPAViewControllerTestHelper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KPAViewControllerTestHelper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A18B976C1835C0D2006E2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KPAViewControllerTestHelper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KPAViewControllerTestHelper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A18B978A1835C109006E2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A18B978B1835C109006E2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4ADD1AA197941F68D61652A /* Pods-Specs.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A18B97421835C0D2006E2FCD /* Build configuration list for PBXProject "KPAViewControllerTestHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18B97681835C0D2006E2FCD /* Debug */,
+				A18B97691835C0D2006E2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18B976A1835C0D2006E2FCD /* Build configuration list for PBXNativeTarget "KPAViewControllerTestHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18B976B1835C0D2006E2FCD /* Debug */,
+				A18B976C1835C0D2006E2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18B97891835C109006E2FCD /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18B978A1835C109006E2FCD /* Debug */,
+				A18B978B1835C109006E2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A18B973F1835C0D2006E2FCD /* Project object */;
+}
