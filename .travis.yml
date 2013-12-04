@@ -1,3 +1,6 @@
 language: objective-c
+xcode_workspace: "KPAViewControllerTestHelper.xcworkspace"
+xcode_scheme: "KPAViewControllerTestHelper"
+rvm: 1.9.3
 cache: bundler
-script: rake
+script: "bundle exec rake"
