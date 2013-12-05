@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A18B97461835C0D2006E2FCD"
-               BuildableName = "libKPAViewControllerTestHelper.a"
-               BlueprintName = "KPAViewControllerTestHelper"
-               ReferencedContainer = "container:KPAViewControllerTestHelper.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "A18B97931835C3F9006E2FCD"
                BuildableName = "SpecsApp.app"
                BlueprintName = "SpecsApp"
@@ -90,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A18B97931835C3F9006E2FCD"
+            BuildableName = "SpecsApp.app"
+            BlueprintName = "SpecsApp"
+            ReferencedContainer = "container:KPAViewControllerTestHelper.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
