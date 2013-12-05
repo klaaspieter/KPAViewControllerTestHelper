@@ -14,17 +14,24 @@
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
     [window makeKeyAndVisible];
-    UIViewController *mainViewController = [[UIViewController alloc] init];
-    mainViewController.view = [[UIView alloc] init];
-    window.rootViewController = mainViewController;
-    [mainViewController presentViewController:viewController animated:NO completion:nil];
+    window.rootViewController = [self emptyViewController];
+    [window.rootViewController presentViewController:viewController animated:NO completion:nil];
 }
 
 + (void)pushViewController:(UIViewController *)viewController;
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
     [window makeKeyAndVisible];
-    window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
+    window.rootViewController = navigationController;
+    [navigationController pushViewController:viewController animated:NO];
+}
+
++ (UIViewController *)emptyViewController;
+{
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.view = [[UIView alloc] init];
+    return viewController;
 }
 
 @end

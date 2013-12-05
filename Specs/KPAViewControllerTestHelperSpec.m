@@ -45,7 +45,13 @@ describe(@"KPAViewControllerTestHelper", ^{
             expect(keyWindow.rootViewController).to.beKindOf([UINavigationController class]);
         });
 
-        it(@"sets the viewController as the navigation controller's root", ^{
+        it(@"sets an empty view controller as the navigation controller's root", ^{
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            UINavigationController *navigationController = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+            expect(navigationController.viewControllers[0]).toNot.equal(_viewController);
+        });
+
+        it(@"pushes the view controller on top of the navigation's controller rootViewController", ^{
             [KPAViewControllerTestHelper pushViewController:_viewController];
             UINavigationController *navigationController = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
             expect(navigationController.topViewController).to.equal(_viewController);
