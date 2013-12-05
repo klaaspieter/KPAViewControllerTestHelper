@@ -14,7 +14,10 @@
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
     [window makeKeyAndVisible];
-    window.rootViewController = viewController;
+    UIViewController *mainViewController = [[UIViewController alloc] init];
+    mainViewController.view = [[UIView alloc] init];
+    window.rootViewController = mainViewController;
+    [mainViewController presentViewController:viewController animated:NO completion:nil];
 }
 
 + (void)pushViewController:(UIViewController *)viewController;

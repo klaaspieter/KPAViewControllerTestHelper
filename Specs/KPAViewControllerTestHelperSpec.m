@@ -19,10 +19,16 @@ describe(@"KPAViewControllerTestHelper", ^{
             expect(keyWindow).toNot.equal([UIApplication sharedApplication].keyWindow);
         });
 
-        it(@"sets the viewcontroller as the rootViewController", ^{
+        it(@"assigns an empty view controller as the root view controller of the window", ^{
             [KPAViewControllerTestHelper presentViewController:_viewController];
             UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
-            expect(keyWindow.rootViewController).to.equal(_viewController);
+            expect(keyWindow.rootViewController).toNot.equal(_viewController);
+        });
+
+        it(@"presents the view controller on the window's rootViewController", ^{
+            [KPAViewControllerTestHelper presentViewController:_viewController];
+            UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+            expect(keyWindow.rootViewController.presentedViewController).to.equal(_viewController);
         });
     });
 
