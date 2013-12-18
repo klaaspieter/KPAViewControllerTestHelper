@@ -2,14 +2,15 @@
 
 #import "KPAViewControllerTestHelper.h"
 
+#import "ViewController.h"
+
 SpecBegin(KPAViewControllerTestHelper)
 
-__block UIViewController *_viewController;
+__block ViewController *_viewController;
 
 describe(@"KPAViewControllerTestHelper", ^{
     before(^{
-        _viewController = [[UIViewController alloc] init];
-        _viewController.view = [[UIView alloc] init];
+        _viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
     });
 
     describe(@"presenting a view controller", ^{
@@ -55,6 +56,11 @@ describe(@"KPAViewControllerTestHelper", ^{
             [KPAViewControllerTestHelper pushViewController:_viewController];
             UINavigationController *navigationController = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
             expect(navigationController.topViewController).to.equal(_viewController);
+        });
+
+        it(@"gives access to outlets directly after the view controller is pushed", ^{
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            expect(_viewController.button).toNot.beNil();
         });
     });
 });

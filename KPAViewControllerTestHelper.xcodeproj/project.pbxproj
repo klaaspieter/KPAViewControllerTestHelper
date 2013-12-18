@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33DFF02D5A6442EFB08E24B5 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D212FE4B041455D82CC5B0B /* libPods-Specs.a */; };
+		A15363A018621165000BE09C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A153639F18621165000BE09C /* Main.storyboard */; };
+		A15363A3186211A2000BE09C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15363A2186211A2000BE09C /* ViewController.m */; };
 		A18B974B1835C0D2006E2FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B974A1835C0D2006E2FCD /* Foundation.framework */; };
 		A18B97741835C0F8006E2FCD /* KPAViewControllerTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B97731835C0F8006E2FCD /* KPAViewControllerTestHelper.m */; };
 		A18B977B1835C109006E2FCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B97581835C0D2006E2FCD /* XCTest.framework */; };
@@ -50,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		1D212FE4B041455D82CC5B0B /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A153639F18621165000BE09C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A15363A1186211A2000BE09C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A15363A2186211A2000BE09C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A18B97471835C0D2006E2FCD /* libKPAViewControllerTestHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKPAViewControllerTestHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18B974A1835C0D2006E2FCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A18B97581835C0D2006E2FCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -185,8 +190,11 @@
 			children = (
 				A18B97A21835C3F9006E2FCD /* AppDelegate.h */,
 				A18B97A31835C3F9006E2FCD /* AppDelegate.m */,
+				A153639F18621165000BE09C /* Main.storyboard */,
 				A18B97A51835C3F9006E2FCD /* Images.xcassets */,
 				A18B979A1835C3F9006E2FCD /* Supporting Files */,
+				A15363A1186211A2000BE09C /* ViewController.h */,
+				A15363A2186211A2000BE09C /* ViewController.m */,
 			);
 			path = SpecsApp;
 			sourceTree = "<group>";
@@ -305,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15363A018621165000BE09C /* Main.storyboard in Resources */,
 				A18B979E1835C3F9006E2FCD /* InfoPlist.strings in Resources */,
 				A18B97A61835C3F9006E2FCD /* Images.xcassets in Resources */,
 			);
@@ -369,6 +378,7 @@
 			files = (
 				A18B97A41835C3F9006E2FCD /* AppDelegate.m in Sources */,
 				A18B97BF1835C426006E2FCD /* KPAViewControllerTestHelper.m in Sources */,
+				A15363A3186211A2000BE09C /* ViewController.m in Sources */,
 				A18B97A01835C3F9006E2FCD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +630,7 @@
 				A18B97BB1835C3F9006E2FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -25,6 +25,7 @@
     UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
     window.rootViewController = navigationController;
     [navigationController pushViewController:viewController animated:NO];
+    [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.0]];
 }
 
 + (UIViewController *)emptyViewController;
