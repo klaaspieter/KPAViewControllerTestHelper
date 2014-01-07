@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KPAViewControllerTestHelper"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Convenience class for testing view controllers"
   s.homepage     = "https://github.com/klaaspieter/KPAViewControllerTestHelper"
   s.license      = "MIT"
