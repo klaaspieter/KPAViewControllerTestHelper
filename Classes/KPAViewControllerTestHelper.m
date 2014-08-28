@@ -10,21 +10,26 @@
 
 @implementation KPAViewControllerTestHelper
 
-+ (void)presentViewController:(UIViewController *)viewController;
++ (UIWindow *)prepareWindowWithRootViewController:(UIViewController *)rootViewController;
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
     [window makeKeyAndVisible];
-    window.rootViewController = [self emptyViewController];
+    window.rootViewController = rootViewController;
+    [self wait];
+    return window;
+}
+
++ (void)presentViewController:(UIViewController *)viewController;
+{
+    UIWindow *window = [self prepareWindowWithRootViewController:[self emptyViewController]];
     [window.rootViewController presentViewController:viewController animated:NO completion:nil];
     [self wait];
 }
 
 + (void)pushViewController:(UIViewController *)viewController;
 {
-    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
-    [window makeKeyAndVisible];
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
-    window.rootViewController = navigationController;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
+    [self prepareWindowWithRootViewController:navigationController];
     [navigationController pushViewController:viewController animated:NO];
     [self wait];
 }

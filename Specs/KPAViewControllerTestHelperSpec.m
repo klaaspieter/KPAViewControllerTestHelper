@@ -80,7 +80,7 @@ describe(@"KPAViewControllerTestHelper", ^{
     });
 
     describe(@"dismissing a view controller", ^{
-        it(@"waits until the view controller has actually disappeard", ^{
+        it(@"waits until the view controller has actually disappeared", ^{
             [KPAViewControllerTestHelper presentViewController:_viewController];
             [KPAViewControllerTestHelper dismissViewController:_viewController];
             expect(_viewController.didAppear).to.beFalsy();
@@ -88,9 +88,29 @@ describe(@"KPAViewControllerTestHelper", ^{
     });
 
     describe(@"presenting and dismissing", ^{
-        it(@"waits until the view controller has actually disappeard", ^{
+        it(@"waits until the view controller has actually disappeared", ^{
             [KPAViewControllerTestHelper presentAndDismissViewController:_viewController];
             expect(_viewController.didAppear).to.beFalsy();
+        });
+    });
+
+    describe(@"presenting many view controllers in rapid succession", ^{
+        it(@"waits until each presented view controller has appeared", ^{
+            for (NSUInteger i = 0; i < 100; i++) {
+                ViewController *viewController = [[UIStoryboard storyboardWithName:@"Main"
+                                                                              bundle:nil] instantiateInitialViewController];
+                [KPAViewControllerTestHelper presentViewController:viewController];
+                expect(viewController.didAppear).to.beTruthy();
+            }
+        });
+
+        it(@"waits until each pushed view controller has appeared", ^{
+            for (NSUInteger i = 0; i < 100; i++) {
+                ViewController *viewController = [[UIStoryboard storyboardWithName:@"Main"
+                                                                            bundle:nil] instantiateInitialViewController];
+                [KPAViewControllerTestHelper pushViewController:viewController];
+                expect(viewController.didAppear).to.beTruthy();
+            }
         });
     });
 });
