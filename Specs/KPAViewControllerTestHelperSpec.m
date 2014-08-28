@@ -86,6 +86,13 @@ describe(@"KPAViewControllerTestHelper", ^{
             expect(_viewController.didAppear).to.beFalsy();
         });
     });
+
+    describe(@"presenting and dismissing", ^{
+        it(@"waits until the view controller has actually disappeard", ^{
+            [KPAViewControllerTestHelper presentAndDismissViewController:_viewController];
+            expect(_viewController.didAppear).to.beFalsy();
+        });
+    });
 });
 
 SpecEnd
