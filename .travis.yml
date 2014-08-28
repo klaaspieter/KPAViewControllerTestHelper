@@ -1,10 +1,7 @@
 language: objective-c
 xcode_workspace: "KPAViewControllerTestHelper.xcworkspace"
 xcode_scheme: "KPAViewControllerTestHelper"
-before_install:
-  - brew update
-  - brew remove --force xctool
-  - brew install xctool --HEAD
-rvm: 1.9.3
-cache: bundler
+cache: 
+  - bundler
+  - cocoapods
 script: "bundle exec rake"
