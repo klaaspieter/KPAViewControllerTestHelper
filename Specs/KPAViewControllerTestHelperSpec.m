@@ -31,6 +31,16 @@ describe(@"KPAViewControllerTestHelper", ^{
             UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
             expect(keyWindow.rootViewController.presentedViewController).to.equal(_viewController);
         });
+
+        it(@"waits until the view controller has actually appeared", ^{
+            [KPAViewControllerTestHelper presentViewController:_viewController];
+            expect(_viewController.didAppear).to.beTruthy();
+        });
+
+        it(@"gives access to outlets directly after the view controller is pushed", ^{
+            [KPAViewControllerTestHelper pushViewController:_viewController];
+            expect(_viewController.button).toNot.beNil();
+        });
     });
 
     describe(@"pushing a view controller", ^{
@@ -61,6 +71,11 @@ describe(@"KPAViewControllerTestHelper", ^{
         it(@"gives access to outlets directly after the view controller is pushed", ^{
             [KPAViewControllerTestHelper pushViewController:_viewController];
             expect(_viewController.button).toNot.beNil();
+        });
+
+        it(@"waits until the view controller has actually appeared", ^{
+            [KPAViewControllerTestHelper presentViewController:_viewController];
+            expect(_viewController.didAppear).to.beTruthy();
         });
     });
 });

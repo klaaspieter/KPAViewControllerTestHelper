@@ -16,6 +16,7 @@
     [window makeKeyAndVisible];
     window.rootViewController = [self emptyViewController];
     [window.rootViewController presentViewController:viewController animated:NO completion:nil];
+    [self wait];
 }
 
 + (void)pushViewController:(UIViewController *)viewController;
@@ -25,7 +26,12 @@
     UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
     window.rootViewController = navigationController;
     [navigationController pushViewController:viewController animated:NO];
-    [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.0]];
+    [self wait];
+}
+
++ (void)wait;
+{
+    [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
 }
 
 + (UIViewController *)emptyViewController;

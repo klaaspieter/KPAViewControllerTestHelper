@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *button;
+
+@property (nonatomic, readonly, assign) BOOL didAppear;
 @end
