@@ -13,4 +13,6 @@
 + (void)presentViewController:(UIViewController *)viewController;
 + (void)pushViewController:(UIViewController *)viewController;
 
++ (void)dismissViewController:(UIViewController *)viewController;
+
 @end

@@ -29,6 +29,12 @@
     [self wait];
 }
 
++ (void)dismissViewController:(UIViewController *)viewController;
+{
+    [viewController dismissViewControllerAnimated:NO completion:nil];
+    [self wait];
+}
+
 + (void)wait;
 {
     [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
