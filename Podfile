@@ -1,5 +1,5 @@
 target "Specs" do
-  pod "Specta"
+  pod "Specta", git: "https://github.com/specta/specta.git"
   pod "Expecta"
 end
 
