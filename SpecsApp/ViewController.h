@@ -11,5 +11,5 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
-@property (nonatomic, readonly, assign) BOOL didAppear;
+@property (nonatomic, readwrite, assign) BOOL shouldCrash;
 @end

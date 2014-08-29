@@ -32,9 +32,24 @@ describe(@"KPAViewControllerTestHelper", ^{
             expect(keyWindow.rootViewController.presentedViewController).to.equal(_viewController);
         });
 
+        it(@"the window's root view controller is the presenter", ^{
+            [KPAViewControllerTestHelper presentViewController:_viewController];
+            expect(_viewController.presentingViewController).to.equal([UIApplication sharedApplication].keyWindow.rootViewController);
+        });
+
+        it(@"it continues after a crash", ^{
+            // The old pre-xode6 way of doing things would fail everything after a exception happened during the
+            // presentation of a view controller. This doesn't really do anything, except make sure that the suite continues
+            // succesfully after the exception.
+            _viewController.shouldCrash = YES;
+            expect(^{
+                [KPAViewControllerTestHelper presentViewController:_viewController];
+            }).to.raise(NSInternalInconsistencyException);
+        });
+
         it(@"waits until the view controller has actually appeared", ^{
             [KPAViewControllerTestHelper presentViewController:_viewController];
-            expect(_viewController.didAppear).to.beTruthy();
+            expect(_viewController.presentingViewController).to.equal([UIApplication sharedApplication].keyWindow.rootViewController);
         });
 
         it(@"gives access to outlets directly after the view controller is pushed", ^{
@@ -75,22 +90,14 @@ describe(@"KPAViewControllerTestHelper", ^{
 
         it(@"waits until the view controller has actually appeared", ^{
             [KPAViewControllerTestHelper presentViewController:_viewController];
-            expect(_viewController.didAppear).to.beTruthy();
-        });
-    });
-
-    describe(@"dismissing a view controller", ^{
-        it(@"waits until the view controller has actually disappeared", ^{
-            [KPAViewControllerTestHelper presentViewController:_viewController];
-            [KPAViewControllerTestHelper dismissViewController:_viewController];
-            expect(_viewController.didAppear).to.beFalsy();
+            expect(_viewController.presentingViewController).to.equal([UIApplication sharedApplication].keyWindow.rootViewController);
         });
     });
 
     describe(@"presenting and dismissing", ^{
         it(@"waits until the view controller has actually disappeared", ^{
             [KPAViewControllerTestHelper presentAndDismissViewController:_viewController];
-            expect(_viewController.didAppear).to.beFalsy();
+            expect(_viewController.presentingViewController).to.beNil();
         });
     });
 
@@ -100,16 +107,16 @@ describe(@"KPAViewControllerTestHelper", ^{
                 ViewController *viewController = [[UIStoryboard storyboardWithName:@"Main"
                                                                               bundle:nil] instantiateInitialViewController];
                 [KPAViewControllerTestHelper presentViewController:viewController];
-                expect(viewController.didAppear).to.beTruthy();
+                expect(viewController.presentingViewController).to.equal([UIApplication sharedApplication].keyWindow.rootViewController);
             }
         });
 
         it(@"waits until each pushed view controller has appeared", ^{
-            for (NSUInteger i = 0; i < 100; i++) {
+            for (NSUInteger i = 0; i < 10; i++) {
                 ViewController *viewController = [[UIStoryboard storyboardWithName:@"Main"
                                                                             bundle:nil] instantiateInitialViewController];
                 [KPAViewControllerTestHelper pushViewController:viewController];
-                expect(viewController.didAppear).to.beTruthy();
+                expect(viewController.parentViewController).to.equal([UIApplication sharedApplication].keyWindow.rootViewController);
             }
         });
     });

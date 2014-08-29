@@ -8,6 +8,8 @@
 
 #import "KPAViewControllerTestHelper.h"
 
+#import "RootViewController.h"
+
 @implementation KPAViewControllerTestHelper
 
 + (UIWindow *)prepareWindowWithRootViewController:(UIViewController *)rootViewController;
@@ -36,7 +38,7 @@
 
 + (void)dismissViewController:(UIViewController *)viewController;
 {
-    [viewController dismissViewControllerAnimated:NO completion:nil];
+    [viewController.presentingViewController dismissViewControllerAnimated:NO completion:nil];
     [self wait];
 }
 
@@ -53,7 +55,7 @@
 
 + (UIViewController *)emptyViewController;
 {
-    UIViewController *viewController = [[UIViewController alloc] init];
+    UIViewController *viewController = [[RootViewController alloc] init];
     viewController.view = [[UIView alloc] init];
     return viewController;
 }
