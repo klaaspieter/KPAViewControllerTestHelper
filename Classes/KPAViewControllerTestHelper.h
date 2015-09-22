@@ -16,4 +16,12 @@
 + (void)dismissViewController:(UIViewController *)viewController;
 + (void)presentAndDismissViewController:(UIViewController *)viewController;
 
+// To be called in tearDown, or your test framework's equivalent.
+// KPAViewControllerTestHelper works by creating a new window for every view controller
+// under test. Windows are expensive objects to maintain so cleaning them up after every
+// test makes your test suite run faster.
+// It is not required, but highly recommended, to call this method after every test.
++ (NSArray *)createdWindows;
++ (void)tearDown;
+
 @end

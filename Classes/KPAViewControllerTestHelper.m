@@ -8,14 +8,26 @@
 
 #import "KPAViewControllerTestHelper.h"
 
+static NSMutableArray *KPAViewControllerTestHelperWindows = nil;
+
 @implementation KPAViewControllerTestHelper
+
++ (NSArray *)createdWindows;
+{
+    return [KPAViewControllerTestHelperWindows copy];
+}
 
 + (UIWindow *)prepareWindowWithRootViewController:(UIViewController *)rootViewController;
 {
+    if (!KPAViewControllerTestHelperWindows) {
+        KPAViewControllerTestHelperWindows = [NSMutableArray array];
+    }
+
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectZero];
     [window makeKeyAndVisible];
     window.rootViewController = rootViewController;
     [self wait];
+    [KPAViewControllerTestHelperWindows addObject:window];
     return window;
 }
 
@@ -56,6 +68,15 @@
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view = [[UIView alloc] init];
     return viewController;
+}
+
++ (void)tearDown;
+{
+    for (UIWindow *window in KPAViewControllerTestHelperWindows) {
+        window.hidden = true;
+    }
+    [self wait];
+    KPAViewControllerTestHelperWindows = [NSMutableArray array];
 }
 
 @end

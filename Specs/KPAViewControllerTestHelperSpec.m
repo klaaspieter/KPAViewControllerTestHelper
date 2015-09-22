@@ -108,6 +108,23 @@ describe(@"KPAViewControllerTestHelper", ^{
             }
         });
     });
+
+    describe(@"tear down", ^{
+        it(@"hides windows it created", ^{
+            NSArray *createdWindows = [KPAViewControllerTestHelper createdWindows];
+
+            [KPAViewControllerTestHelper tearDown];
+
+            for (UIWindow *window in createdWindows) {
+                expect(window.isHidden).to.beTruthy();
+            }
+        });
+
+        it(@"stops keeping track of the torn down windows", ^{
+            [KPAViewControllerTestHelper tearDown];
+            expect([KPAViewControllerTestHelper createdWindows]).to.equal(@[]);
+        });
+    });
 });
 
 SpecEnd
