@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^ContainerViewControllerPresentationBlock)(UIViewController *containerViewController, UIViewController *viewController);
+
 @interface KPAViewControllerTestHelper : NSObject
+
++ (void)makeViewControllerVisible:(UIViewController *)viewController inContainerViewController:(UIViewController *)containerViewController presentationBlock:(ContainerViewControllerPresentationBlock)presentationBlock;
 
 + (void)presentViewController:(UIViewController *)viewController;
 + (void)pushViewController:(UIViewController *)viewController;

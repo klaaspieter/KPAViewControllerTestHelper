@@ -33,17 +33,17 @@ static NSMutableArray *KPAViewControllerTestHelperWindows = nil;
 
 + (void)presentViewController:(UIViewController *)viewController;
 {
-    UIWindow *window = [self prepareWindowWithRootViewController:[self emptyViewController]];
-    [window.rootViewController presentViewController:viewController animated:NO completion:nil];
-    [self wait];
+    [self makeViewControllerVisible:viewController inContainerViewController:[self emptyViewController] presentationBlock:^(UIViewController *containerViewController, UIViewController *viewController) {
+        [containerViewController presentViewController:viewController animated:NO completion:nil];
+    }];
 }
 
 + (void)pushViewController:(UIViewController *)viewController;
 {
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[self emptyViewController]];
-    [self prepareWindowWithRootViewController:navigationController];
-    [navigationController pushViewController:viewController animated:NO];
-    [self wait];
+    [self makeViewControllerVisible:viewController inContainerViewController:navigationController presentationBlock:^(UIViewController *containerViewController, UIViewController *viewController) {
+        [navigationController pushViewController:viewController animated:NO];
+    }];
 }
 
 + (void)dismissViewController:(UIViewController *)viewController;
@@ -68,6 +68,12 @@ static NSMutableArray *KPAViewControllerTestHelperWindows = nil;
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view = [[UIView alloc] init];
     return viewController;
+}
+
++ (void)makeViewControllerVisible:(UIViewController *)viewController inContainerViewController:(UIViewController *)containerViewController presentationBlock:(ContainerViewControllerPresentationBlock)presentationBlock; {
+    [self prepareWindowWithRootViewController:containerViewController];
+    presentationBlock(containerViewController, viewController);
+    [self wait];
 }
 
 + (void)tearDown;
