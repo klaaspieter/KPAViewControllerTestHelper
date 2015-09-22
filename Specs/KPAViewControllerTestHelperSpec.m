@@ -36,11 +36,6 @@ describe(@"KPAViewControllerTestHelper", ^{
             [KPAViewControllerTestHelper presentViewController:_viewController];
             expect(_viewController.didAppear).to.beTruthy();
         });
-
-        it(@"gives access to outlets directly after the view controller is pushed", ^{
-            [KPAViewControllerTestHelper pushViewController:_viewController];
-            expect(_viewController.button).toNot.beNil();
-        });
     });
 
     describe(@"pushing a view controller", ^{

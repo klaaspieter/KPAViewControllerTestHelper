@@ -1,6 +1,6 @@
 PODS:
-  - Expecta (0.3.1)
-  - Specta (0.2.1)
+  - Expecta (1.0.3)
+  - Specta (1.0.4)
 
 DEPENDENCIES:
   - Expecta
@@ -10,8 +10,13 @@ EXTERNAL SOURCES:
   Specta:
     :git: https://github.com/specta/specta.git
 
-SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  Specta: 39c70be28c3b9c624e349ad9fede10f277f38d34
+CHECKOUT OPTIONS:
+  Specta:
+    :commit: 8f7ac2989d5ad953ded6c3c3668ee128cd2e5683
+    :git: https://github.com/specta/specta.git
 
-COCOAPODS: 0.33.1
+SPEC CHECKSUMS:
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
+
+COCOAPODS: 0.38.2
